@@ -8,7 +8,7 @@ end
 
 get '/dooropener' do
   Twilio::TwiML::Response.new do |r|
-    r.Play 'https://dl.dropboxusercontent.com/content_link/bsoICSl8Kmtf8dleUayPg6Gy1Xl2Trw7cocx6TKnsanftSB7sWfedWMhVoyYBXds'
+    r.Play 'https://raw.githubusercontent.com/sobolewskaanna/dooropener/master/sounds/9.wav'
   end.text
 end
 
