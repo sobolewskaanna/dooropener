@@ -7,7 +7,9 @@ get '/' do
 end
 
 get '/dooropener' do
-  "hello"
+  Twilio::TwiML::Response.new do |r|
+    r.Play 'https://dl.dropboxusercontent.com/content_link/bsoICSl8Kmtf8dleUayPg6Gy1Xl2Trw7cocx6TKnsanftSB7sWfedWMhVoyYBXds'
+  end.text
 end
 
 get '/hello-monkey' do
